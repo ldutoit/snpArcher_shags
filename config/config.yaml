@@ -10,7 +10,7 @@ sentieon_lic: "" #set to path of sentieon license
 remote_reads: False # Set True if reads are in a location seperate from --default-remote-prefix.
 remote_reads_prefix: "" # set to google bucket prefix where reads live. FOR SNAKEMAKE 7.X.X ONLY.
 bigtmp: "" #Set to a path with lots of free space to use for commands that require large amounts of temp space; defaults to system tmpdir if empty
-cov_filter: True #set to True if you want to include coverage thresholds in the callable sites bed file (default uses mappability only)
+cov_filter: False #set to True if you want to include coverage thresholds in the callable sites bed file (default uses mappability only)
 generate_trackhub: True #Set to true if you want to generate a Genome Browser Trackhub. Dependent on postprocessing module.
 trackhub_email: ""
 mark_duplicates: True
@@ -20,7 +20,7 @@ sort_reads: False
 ##############################
 
 # Set reference genome here if you would like to you use the same reference genome for all samples in sample sheet. See docs for more info.
-# refGenome:
+# refGenome: 
 # refPath:
 
 # Interval approach options, only applicable if intervals is True
