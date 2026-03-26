@@ -1,13 +1,19 @@
 use-conda: True
+executor: slurm
+jobs: 50
+
+#cluster: "sbatch --account=uoo00116 --cpus-per-task={threads} --mem={resources.mem_mb}M --time="
+
 
 # These resources will be applied to all rules. Can be overriden on a per-rule basis below.
 default-resources:
   mem_mb: attempt * 16000
   mem_mb_reduced: (attempt * 16000) * 0.9 # Mem allocated to java for GATK rules (tries to prevent OOM errors)
   # Uncomment and edit following options for slurm execution:
-  # slurm_partition: ""
-  # slurm_account: # Same as sbatch -A. Not all clusters use this.
-  # runtime: 720 # In minutes
+  slurm_partition: "genoa"
+  slurm_account: uoo02831 # Same as sbatch -A. Not all clusters use this.
+  runtime: 12:00:00 # In minutes
+  tmpdir: "tmp/"
 
 # Control number of threads each rule will use.
 set-threads:
@@ -22,13 +28,13 @@ set-threads:
   dedup: 16
 
   # GVCF
-  bam2gvcf: 1 # Does not benefit from more than 2 threads
-  gvcf2DB: 1 # Does not benefit from more than 2 threads
+  bam2gvcf: 2 # Does not benefit from more than 2 threads
+  gvcf2DB: 2  # Does not benefit from more than 2 threads
 
   # VCF
-  DB2vcf: 1 # Does not benefit from more than 2 threads
-  filterVcfs: 1 # Does not benefit from more than 2 threads
-  sort_gatherVcfs: 1 # Does not benefit from more than 2 threads
+  DB2vcf: 2 # Does not benefit from more than 2 threads
+  filterVcfs: 2 # Does not benefit from more than 2 threads
+  sort_gatherVcfs: 2 # Does not benefit from more than 2 threads
 
   # Callable Bed
   compute_d4: 6

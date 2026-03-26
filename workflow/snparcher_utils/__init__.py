@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-
+pd.set_option("future.no_silent_downcasting", True)
 
 try:
     # Snakemake 8.x.x
