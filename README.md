@@ -1,8 +1,10 @@
 # snpArcher
 
-<img src="./docs/img/logo.png" alt="snpArcher logo" height="300"/>
+*This is the configuration used for SNP calling of 50 shages* Additional filtering was performed according to [filtering.md](filtering.md), resulting in a dataset of:
 
+- 4,48 million SNPs if I only keep genotypes with a minimum of depth of 2 and SNPs that are found in 80% of individuals. Low missing data (0-0.2, with one individual: AGW168_33_1114_04 at 0.42).
 
+## snpArcher doc
 snpArcher is a reproducible workflow optimized for nonmodel organisms and comparisons across datasets, built on the [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html#) workflow management system. It provides a streamlined approach to dataset acquisition, variant calling, quality control, and downstream analysis.
 
 ### Usage
