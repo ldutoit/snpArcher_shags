@@ -11,5 +11,7 @@ vcftools --gzvcf results/ena_PRJEB60539_sequence.fasta/test_clean_snps.vcf.gz --
 vcftools --vcf out.recode.vcf --depth
 vcftools --vcf out.recode.vcf --missing-indv
 ````
-
+renaming
+```
 mv out.recode.vcf shags.recode.vcf
+```
