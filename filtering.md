@@ -15,3 +15,5 @@ renaming
 ```
 mv out.recode.vcf shags.recode.vcf
 ```
+
+A backup of this file currently exist at: ~/nesi/project/uoo00116/shags.recode.vcf
