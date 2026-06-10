@@ -1,4 +1,4 @@
-# snpArcher Leucocarbo shags
+# snpArcher *Leucocarbo* shags
 the pipeline was run through [run.sh](run.sh)
 
 Additional filtering was performed according to [filtering.md](filtering.md), resulting in a dataset of:
