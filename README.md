@@ -1,6 +1,6 @@
 # snpArcher
 
-*This is the configuration used for SNP calling of 50 shages*.
+*This is the configuration used for SNP calling of 50 shags*.
 
 the pipeline was ran through [run.sh](run.sh)
 
