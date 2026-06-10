@@ -1,5 +1,7 @@
 # snpArcher *Leucocarbo* shags
-the pipeline was run through [run.sh](run.sh)
+
+Detailed information about snpArcher can be found at  [https://snparcher.readthedocs.io/en/latest/setup.html](https://snparcher.readthedocs.io/en/latest/setup.html). 
+The pipeline was run through [run.sh](run.sh)
 
 Additional filtering was performed according to [filtering.md](filtering.md), resulting in a dataset of:
 
